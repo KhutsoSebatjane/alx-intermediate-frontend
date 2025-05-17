@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @media (max-width: 768px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+      <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+      <section class="lg:col-span-2 flex">
+        <div class="w-1/2 bg-red-200 p-4">Flexbox Item 1</div>
+        <div class="w-1/2 bg-red-400 p-4">Flexbox Item 2</div>
+      </section>
+      <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+
+    <section class="grid grid-cols-1 lg:grid-cols-3 w-250">
+      <img
+        src="https://www.entheosweb.com/wp-content/uploads/2023/02/07_God_Is_Good_Christian-Desktop-Wallpaper_Designed-By-EntheosWeb.png"
+      />
+      <img
+        src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?semt=ais_hybrid&w=740"
+      />
+      <img
+        src="https://wallpapers.com/images/high/aesthetic-pink-pictures-hp1cau7dhg78eds7.webp"
+      />
+
+      <img
+        src="https://wallpapers.com/images/high/melting-rose-soft-aesthetic-8c85yb0hh1234a15.webp"
+      />
+      <img src="https://sncdn.com/imagecache/db/id/817762/go429939.jpg" />
+      <img
+        src="https://drawinghowtos.com/wp-content/uploads/2020/01/black-girl-colored.jpg"
+      />
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+      <p>&copy; 2025 Khutso Sebatjane's Blog</p>
+    </footer>
+  </body>
+</html>
